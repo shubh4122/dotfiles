@@ -116,9 +116,11 @@ typeset -A menu
 menu=(
   [ Shutdown]="systemctl poweroff"
   [ Reboot]="systemctl reboot"
-  [ Suspend]="systemctl suspend"
+  #[ Suspend]="systemctl suspend"
+  [ Suspend]="systemctl suspend & i3lock -n --image $HOME/Wallpapers/LockScreen/finalLockScreen.png"
   [ Hibernate]="systemctl hibernate"
-  [ Lock]="~/.config/i3/scripts/blur-lock"
+  #[ Lock]="~/.config/i3/scripts/blur-lock"
+  [ Lock]="exec i3lock --image /home/shubh/Wallpapers/LockScreen/finalLockScreen.png --show-failed-attempts"
   [ Logout]="i3-msg exit"
   [ Cancel]=""
 )
