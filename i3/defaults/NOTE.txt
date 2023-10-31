@@ -1,0 +1,6 @@
+NOTE:
+
+I made this defaults dir.
+It contains the original i3 config files for user from the EOS team.
+If i mess up with original files, use these backup files. And copy their data to ../config ../i3blocks.conf and ../keybindings
+
